@@ -1,0 +1,84 @@
+/* Admin Dashboard Custom Styles */
+
+/* Smooth transitions */
+.MuiCard-root,
+.MuiButton-root,
+.MuiListItemButton-root {
+  transition: all 0.3s ease !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff7a18, #ffd200);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7a18;
+}
+
+/* Table hover effect */
+.MuiTableRow-root:hover {
+  background-color: rgba(255, 122, 24, 0.04) !important;
+}
+
+/* Card image zoom on hover */
+.MuiCard-root img {
+  transition: transform 0.3s ease;
+}
+
+.MuiCard-root:hover img {
+  transform: scale(1.02);
+}
+
+/* Sidebar active item glow */
+.Mui-selected {
+  background: linear-gradient(90deg, rgba(255,122,24,0.2), transparent) !important;
+}
+
+/* Animation for stats cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.MuiCard-root {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Responsive table */
+@media (max-width: 900px) {
+  .MuiTable-root {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Loading shimmer effect */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Dialog custom styles */
+.MuiDialog-paper {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
