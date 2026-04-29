@@ -26,12 +26,6 @@ API docs: http://localhost:8000/docs
 - Email: admin@gmail.com
 - Password: aliza123
 
-## Changes from original TypeScript project
-- All .tsx → .jsx (TypeScript removed)
-- All .ts → .js
-- Type annotations, interfaces, generics removed
-- tsconfig files removed
-- Backend 100% unchanged (Python + MySQL)
 
 ## Full Stack Web Application Working (Volunteer Management System)
 
